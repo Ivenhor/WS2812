@@ -108,30 +108,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  /*
-	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == 0){
-		  var++;
-		  Reset_LED();
-		  HAL_Delay(150);
-		  while(var==0)
-		  {
-			  rainbow_effect_right();
-		  }
-		  while(var==1)
-		  {
-			  rainbow_effect_left();
-		  }
-		  while(var==2)
-		  {
-			  rainbow_text("test",5,0);
-		  }
-		  if(var==3)
-		  {
-			  var=0;
-		  }
 
-	  }
-	  */
 	  for (uint8_t i=0; i<100; i++)
 	  {
 		  rainbow_effect_right();
@@ -155,8 +132,7 @@ int main(void)
 	  {
 		  test();
 	  }
-	  //draw_text("test",0,0,255,0,0);
-	  //draw_scroll_text("long test text",0,255,0);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
